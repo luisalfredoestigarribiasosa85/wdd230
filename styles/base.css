@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+header {
+    background-color: #1D4D72;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+header img {
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+header span {
+    font-size: 25pt;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16pt;
+}
+nav ul .home {
+    background-color: #643219;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+hr {
+    width: 80%;
+    margin: auto;
+}
+h1 {
+    width: 90%;
+    margin: 20px auto;
+    border-bottom: 1px solid #989898;
+    color: #333333;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px auto;
+    gap: 10px;
+    width: 90%;
+}
+.parent .card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.parent .card h2 {
+    background-color: #1D4D72;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.parent .card li {
+    padding: 10px;
+    font-weight: bold;
+}
+footer {
+    background-color: #1D4D72;
+    padding: 10px;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+    margin: 5px;
+    font-size: 14pt;
+}
+footer #lastModified {
+    color: #F8F716;
+}

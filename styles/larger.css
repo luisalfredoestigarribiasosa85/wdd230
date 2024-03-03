@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .parent .card {
+        box-shadow: none;
+        border: 1px solid #7b7575;
+    }
+    .parent .card span {
+        display: block;
+        padding: 30px;
+    }
+}
