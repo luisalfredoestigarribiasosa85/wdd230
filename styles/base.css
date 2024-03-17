@@ -9,6 +9,7 @@ body {
     font-style: normal;
 }
 header {
+    position: relative;
     background-color: #1D4D72;
     color: #fff;
     padding: 20px;
@@ -16,6 +17,42 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+#darkMode::before {
+    content: '🌙';
+}
+#darkMode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 44px;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+#darkMode:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 5px 0;
+    transition: 0.5s;
+}
+#darkMode.open::before {
+    content: '☀';
+}
+main.dark {
+    background-color: #333333;
+    color: #fff;
+}
+main.dark h1 {
+    color: #fff;
+}
+main.dark .parent .card {
+    box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.2);
+}
+main.dark ul li a {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
 }
 header img {
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3);
@@ -45,6 +82,9 @@ nav ul .home {
 }
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+#myButton {
+    display: none;
 }
 hr {
     width: 80%;

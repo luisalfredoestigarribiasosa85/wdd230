@@ -1,8 +1,30 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 512px) {
     nav ul {
-        display: flex;
-        flex-direction: column;
+        display: block;
         width: 100%;
+    }
+    #myButton::before {
+        content: '\2630';
+    }
+    #myButton {
+        display: contents;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #000;
+        cursor: pointer;
+        width: 44px;
+        text-align: left;
+        padding: 0.25rem 2vw;
+    }
+    ul.menuLinks {
+        display: none;
+    }
+    #myButton.open::before {
+        content: 'X';
+    }
+    ul.open {
+        display: block;
     }
     .parent {
         display: flex;
@@ -11,6 +33,9 @@
     .parent .card {
         box-shadow: none;
         border: 1px solid #7b7575;
+    }
+    main.dark .parent .card {
+        box-shadow: none;
     }
     .parent .card span {
         display: block;

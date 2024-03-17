@@ -13,22 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
+        <div id="darkMode"></div>
         <img src="images/profile.jpg" alt="Luis Estigarribia profile" width="75" height="100">
         <span>Luis Estigarribia</span>
     </header>
     <nav>
-        <ul>
-            <li class="home"><a href="index.html">Home</a></li>
-            <li><a href="./week01/chamber-site-plan.html">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href="">Form</a></li>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li class="home"><a href="index.html" title="Home">Home</a></li>
+            <li><a href="./week01/chamber-site-plan.html" title="Chamber">Chamber</a></li>
+            <li><a href="#" title="Site Plan">Site Plan</a></li>
+            <li><a href="#" title="Form">Form</a></li>
         </ul>
     </nav>
     <main>
@@ -61,5 +63,6 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
