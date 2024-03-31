@@ -56,6 +56,39 @@ main {
     gap: 20px;
     margin: 10px;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+.side-bar p {
+    padding: 10px;
+}
+#message {
+    margin: 10px;
+    font-weight: bold;
+    font-family: italic;
+    font-size: 18pt;
+}
+.discover-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.discover-images img {
+    border-radius: 5px;
+}
+.discover-images img:hover {
+    opacity: 0.7;
+}
+iframe {
+    width: 100%;
+}
+figcaption {
+    padding: 10px;
+}
 section {
     border: 1px solid #32322f;
     border-radius: 5px;

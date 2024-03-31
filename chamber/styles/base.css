@@ -54,6 +54,13 @@
         width: 100%; /* Cada sección ocupa el 100% del ancho */
         margin-bottom: 10px;
     }
+    div.grid-container {
+        display: block;
+        width: 100%;
+    }
+    .discover-images img {
+        width: 100%;
+    }
     div.events {
         flex-direction: column;
         align-items: center;
