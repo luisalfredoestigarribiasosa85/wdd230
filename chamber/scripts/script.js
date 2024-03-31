@@ -16,7 +16,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var messageElement = document.getElementById('message');
+    var messageElement = document.getElementById('visits');
     var currentDate = Date.now();
     var lastVisitDate = localStorage.getItem('lastVisitDate');
 
