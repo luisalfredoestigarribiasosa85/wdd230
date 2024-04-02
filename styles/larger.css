@@ -41,4 +41,14 @@
         display: block;
         padding: 30px;
     }
+    .hero-label {
+        position: absolute;
+        top: 20px;
+        left: 10%;
+        right: 20px;
+        width: 35%;
+    }
+    .hero-label p {
+        font-size: 0.75rem;
+    }
 }

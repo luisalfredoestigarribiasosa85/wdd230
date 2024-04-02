@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +39,38 @@ header {
 }
 #darkMode.open::before {
     content: '☀';
+}
+.hero-images {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    position: relative;
+}
+.hero-images img {
+    width: 90vw;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+.hero-label {
+    position: absolute;
+    width: 30%;
+    top: 40px;
+    left: 15%;
+    bottom: auto;
+    background: radial-gradient(#fff, #7872de);
+    border-radius: 5px;
+    border: 1px solid rgba(37, 36, 36, 0.356);
+    padding: 20px;
+    box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+    text-align: center;
+}
+.hero-label p {
+    font-family: "Great Vibes", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
 }
 main.dark {
     background-color: #333333;
@@ -104,6 +137,8 @@ h1 {
     width: 90%;
 }
 .parent .card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid grey;
     border-radius: 5px;
     overflow: hidden;
@@ -118,6 +153,21 @@ h1 {
 .parent .card li {
     padding: 10px;
     font-weight: bold;
+}
+.card span {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.map {
+    text-align: center;
+}
+.map iframe {
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    height: 400px;
 }
 footer {
     background-color: #1D4D72;

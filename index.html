@@ -21,7 +21,7 @@
 <body>
     <header>
         <div id="darkMode"></div>
-        <img src="images/profile.jpg" alt="Luis Estigarribia profile" width="75" height="100">
+        <img src="images/profile.webp" alt="Luis Estigarribia profile" width="75" height="100" loading="lazy">
         <span>Luis Estigarribia</span>
     </header>
     <nav>
@@ -34,6 +34,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero-images">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/asuncion-paraguay2.webp">
+                <img src="images/asuncion-paraguay1.webp" alt="Asunción Paraguay Temple Image" width="960" height="400" loading="lazy">
+            </picture>
+            <div class="hero-label">
+                <p>Asuncion Paraguay Temple</p>
+            </div>
+        </div>
+        
         <h1>WDD 230: Web Frontend Development</h1>
 
         <div class="parent">
@@ -50,13 +60,17 @@
             </section>
             <section class="card">
                 <h2>Information</h2>
-                <span></span>
-                <span></span>
+                <span>😎 36°C - Sunshine</span>
+                <span id="visits"></span>
                 <span></span>
             </section>
         </div>
         
     </main>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1516.7618906091939!2d-57.60269097558133!3d-25.287801238188866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7d440c38dcf%3A0x427a965607c4ae94!2sTemplo%20de%20Asunci%C3%B3n%2C%20Paraguay!5e0!3m2!1ses-419!2spy!4v1712015998131!5m2!1ses-419!2spy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
     <footer>
         <p>&copy;<span id="year"></span> &bull; Luis Estigarribia &bull; Paraguay </p>
         <p id="lastModified"></p>
