@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table {
+    margin: 10px auto;
+    border: thin  solid hsla(0,0%,33%,.3);
+    border-collapse: collapse;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1.2rem;
+}
+th, td {
+    border: 1px solid hsla(0,0%,33%,.3);
+    padding: 7px 15px;
+}
+th {
+    background-color: #000;
+    color: #fff;
+}
+tr .row {
+    background-color: #666;
+}
+tr:nth-child(even) {
+    background-color: #ccc;
+}
