@@ -1,0 +1,60 @@
+:root {
+    --background-color: #fafafa;
+    --bord: 1px solid #ccc;
+    --transition: brightness(90%);
+}
+.confirmation {
+    color: green;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+legend {
+    font-size: 1.5rem;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: var(--bord);
+    padding: 10px;
+    border-radius: 10px;
+    gap:  10px;
+}
+small {
+    margin-top: -25px;
+}
+label {
+    font-weight: bold;
+}
+input {
+    min-width: 30ch;
+    max-width: 100%;
+    height: 4ch;
+    border: var(--bord);
+    outline: none;
+    padding: 8px;
+    font-size: large;
+    background-color: var(--background-color);
+    border-radius: 6px;
+}
+button {
+    margin: 10px auto;
+    padding: 8px;
+    font-size: x-large;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 5px;
+    border: var(--bord);
+}
+button:hover {
+    filter: brightness(90%);
+}
