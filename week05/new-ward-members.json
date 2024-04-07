@@ -1,0 +1,23 @@
+{
+    "familyName": "Smith",
+    "dateMoved": "04/15/2019",
+    "numberOfRecords": 3,
+    "visitedByBishop": true,
+    "familyMembers":  [
+        {
+            "name": "John Smith",
+            "gender": "male",
+            "birthdate": "03/17/1986"
+        },
+        {
+            "name": "Jane Smith",
+            "gender": "female",
+            "birthdate": "07/19/1996"
+        },
+        {
+            "name": "George Smith",
+            "gender": "male",
+            "birthdate": "05/15/1990"
+        }
+    ]
+}
