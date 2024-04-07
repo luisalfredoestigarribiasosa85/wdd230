@@ -56,6 +56,84 @@ main {
     gap: 20px;
     margin: 10px;
 }
+main.form-inputs {
+    display: flex;
+}
+main.form-inputs h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+form  input, select {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+}
+textarea {
+    width: 100%;
+    min-height: 80px;
+    border-radius: 5px;
+}
+small {
+    margin-top: -15px;
+}
+#membership-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    line-height: 1.5;
+}
+h3 {
+    margin-bottom: 10px;
+    background-color: #32322f;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: .5px;
+    border-radius: 5px 5px 0 0;
+    padding: 7px 10px;
+}
+#membership-benefits p {
+    font-weight: bold;
+    padding: 5px;
+}
+#membership-benefits li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+}
+#membership-benefits .paragraph {
+    background-color: #32322f;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    font-size: x-large;
+    text-align: center;
+}
+#membership-benefits div {
+    border: 1px solid  #ddd;
+    border-radius: 5px;
+}
+#membership-benefits #non {
+    margin-top: 46px;
+}
+#membership-benefits #bronze {
+    margin-top: 254px;
+}
+#membership-benefits #silver {
+    margin-top: 138px;
+}
+#membership-benefits #gold {
+    margin-top: 28%;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -135,9 +213,42 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14pt;
 }
 button:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+main.main-thankyou {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100vw;
+}
+.thankyou-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+.thankyou-container p {
+    line-height: 1.5;
+}
+h1 {
+    color: #47c721;
+    margin-top: 0;
+}
+.submission {
+    color: #47c721;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.thankyou-img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
 }
 h2 {
     background-color: #32322f;

@@ -44,14 +44,17 @@
         width: 100%;
     }
     section, article, footer {
-        width: 100%; /* Ajusta el ancho de estos elementos para que ocupen toda la pantalla */
+        width: 100%; 
+    }
+    main.form-inputs {
+        flex-direction: column;
     }
     main.sections {
-        display: block; /* Cambiar a un diseño de bloque para que las secciones estén una debajo de la otra */
-        margin: 10px; /* Centrar el contenido */
+        display: block; 
+        margin: 10px; 
     }
     main > section {
-        width: 100%; /* Cada sección ocupa el 100% del ancho */
+        width: 100%;
         margin-bottom: 10px;
     }
     div.grid-container {
@@ -80,5 +83,8 @@
     }
     div.ad-card img.image {
         margin: 0 0 0 4px;
+    }
+    .thankyou-container {
+        max-width: 300px;
     }
 }

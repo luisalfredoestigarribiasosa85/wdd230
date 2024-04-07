@@ -2,6 +2,11 @@ const lastMod = document.getElementById('lastMod');
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.menu');
 
+window.onload = function () {
+    const timeStamp = document.querySelector('#timeStamp');
+    const currentTimeStamp = new Date().toISOString();
+    timeStamp.value = currentTimeStamp;
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     if (lastMod) {

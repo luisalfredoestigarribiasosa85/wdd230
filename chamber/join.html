@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="This is the website of The Itaugua Chamber of Commerce, it provides a lot of information about the city activities">
+    <meta name="author" content="Luis Estigarribia">
+    <meta property="og:title" content="Itaugua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i0.wp.com/npy.com.py/wp-content/uploads/2022/11/Itaugua.jpg?resize=300%2C250&ssl=1">
+    <meta property="og:url" content="https://luisalfredoestigarribiasosa85.github.io/wdd230/chamber/index.html">
+    <title>Itaugua Chamber of Commerce</title>
+    <link rel="shortcut icon" href="../chamber/images/fav-chamber.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../chamber/index.html"><img src="../chamber/images/logo.jpg" alt="Image logo of Ñanduti"></a>
+            <h1 class="city-title">Itaugua City Chamber of Commerce</h1>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul class="menu">
+                    <li class="list"><a href="/chamber/index.html">Home</a></li>
+                    <li class="list"><a href="/chamber/discover.html">Discover</a></li>
+                    <li class="list"><a href="#">Directory</a></li>
+                    <li class="list"><a href="#" class="member">Join!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="form-inputs">
+        <form method="get" action="thankyou.html">
+            <h2>Become a Member Today!</h2>
+            <label for="fname">First Name* </label>
+            <input type="text" name="fname" id="fname" required autofocus>
+            <label for="lname">Last Name* </label>
+            <input type="text" name="lname" id="lname" required>
+            <label for="position">Title or Position </label>
+            <input type="text" name="position" id="position" pattern="[a-zA-Z -]{7,}">
+            <small>Must be at least 7 characters.</small><br>
+            <label for="email">Email Address* </label>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+            <label for="tel">Mobile Phone Number* </label>
+            <input type="tel" name="tel" id="tel" required>
+            <label for="business">Business/Organization's name* </label>
+            <input type="text" name="business" id="business" required>
+            <label for="level">Membership Level</label>
+            <select id="level" name="level">
+                <option value="Select one option" disabled>Select one option</option>
+                <option value="NP Membership is for non profit organizations and there is no fee.">NP Membership is for non profit organizations and there is no fee.</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+            <label for="description">Business Description</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="hidden" name="timestamp" id="timeStamp"/>
+            <button type="submit">Send Application</button>
+        </form>
+
+        <div>
+            <h2>Membership Benefits</h2>
+            <div id="membership-benefits">
+                <div>
+                    <h3>Non-Profit</h3>
+                    <p>As a nonprofit member of the Chamber, your business will receive:</p>
+                    <ul>
+                        <li>Access to chamber resources and events</li>
+                        <li>Opportunities to network with other professionals in your field</li>
+                        <li>A voice on industry issues through our advocacy program</li>
+                        <li>Discounted rates on chamber programs and services</li>
+                    </ul>
+                    <p class="paragraph" id="non">Free</p>
+                </div>
+                
+                <div>
+                    <h3>Bronze Membership</h3>
+                    <p>As a Bronze member of the Chamber, your business will receive:</p>
+                    <ul>
+                        <li>All benefits of Nonprofit membership plus:</li>
+                        <li>Recognition as a "Bronze Member" on the Chamber website</li>
+                    </ul>
+                    <p class="paragraph" id="bronze">$150 per year</p>
+                </div>
+
+                <div>
+                    <h3>Silver Membership</h3>
+                    <p>As a Silver Member of the Chamber, your business will receive:</p>
+                    <ul>
+                        <li>All benefits of Bronze and Nonprofit memberships plus:</li>
+                        <li>Dedicated chamber staff contact throughout the year</li>
+                        <li>"Spotlight" recognition at chamber events and on the website</li>
+                    </ul>
+                    <p class="paragraph" id="silver">$475 per year</p>
+                </div>
+
+                <div>
+                <h3>Gold Membership</h3>
+                <p>As a Gold member of the Chamber, your business will receive:</p>
+                <ul>
+                    <li>All benefits of Silver and Bronze memberships plus:</li>
+                    <li>Permanent placement on the Chamber's Business Directory</li>
+                    <li>One free advertisement in the Chamber's newsletter each quarter</li>
+                </ul>
+                <p class="paragraph" id="gold">Contact us for details.</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+    <footer>
+        <p>Phone: +595294-111-111</p>
+        <p>Address: Defensores del Chaco, Itaugua, Central</p>
+        <p>© | Luis Alfredo Estigarribia Sosa | WDD230 Project | 2024 | <span id="lastMod"></span></p>
+        
+    </footer>
+
+    <script src="../chamber/scripts/script.js"></script>
+</body>
+</html>
