@@ -1,0 +1,1 @@
+const baseURL = "https://luisalfredoestigarribiasosa85.github.io/wdd230/";

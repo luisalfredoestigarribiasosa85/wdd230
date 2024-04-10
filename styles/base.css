@@ -160,6 +160,12 @@ h1 {
     font-weight: 600;
     margin-top: 20px;
 }
+figure {
+    margin: 0 auto;
+}
+figure img {
+    margin: 0 0 0 30px;
+}
 .map {
     text-align: center;
 }

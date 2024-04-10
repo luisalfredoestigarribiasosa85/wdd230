@@ -1,0 +1,92 @@
+{
+    "weeks": [
+        {
+            "week01": "Week 1",
+            "links01": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "#",
+                    "title": "JS Pen"
+                }
+            ],
+            "week02": "Week 2",
+            "links02": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/Luis-Estigarribia/pen/RwOoWzP",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BoM Books"
+                }
+            ],
+            "week03": "Week 3",
+            "links03": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "./week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "./week03/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ],
+            "week04": "Week 4",
+            "links04": [
+                {
+                    "url": "https://codepen.io/Luis-Estigarribia/pen/qBwpamO",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "week04/images/w04screenshot.jpg",
+                    "title": "Combinator Exercise"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table"
+                }
+            ],
+            "week05": "Week 5",
+            "links05": [
+                {
+                    "url": "https://codepen.io/Luis-Estigarribia/pen/eYoMReW",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather"
+                }
+            ],
+            "week06": "Week 6",
+            "links06": [
+                {
+                    "url": "#",
+                    "title": "#"
+                }
+            ]
+        }
+    ]
+}
