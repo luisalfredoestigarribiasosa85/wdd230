@@ -68,16 +68,12 @@
             </div>
         </div>
         <div id="weather-ads">
-            <div class="weather-card">
-                <h2>Weather in Itaugua</h2>
-                <p class="degrees">25°</p>
-                <p class="deg">Cloudy</p>
-                <p class="deg">Day 33°C / Night 27°C</p>
+            <div id="weather-widget">
+                <!-- Weather data will be displayed here -->
             </div>
 
-            <div class="ad-card">
-                <h2>Advertisement</h2>
-                <img class="image" src="../chamber/images/ad.jpg" alt="Advertisement">
+            <div id="spotlight-ads">
+                <!-- Spotlight advertisements will be displayed here -->
             </div>
         </div>
     </article>
@@ -87,6 +83,10 @@
         <p>© | Luis Alfredo Estigarribia Sosa | WDD230 Project | 2024 | <span id="lastMod"></span></p>
         
     </footer>
+    
+    <div id="meet-and-greet-banner" style="display: none;">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.! <button onclick="closeBanner()">Close</button></p>
+    </div>
 
     <script src="../chamber/scripts/script.js"></script>
 </body>
