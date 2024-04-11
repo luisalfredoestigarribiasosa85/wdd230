@@ -2,6 +2,55 @@ const lastMod = document.getElementById('lastMod');
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.menu');
 
+document.addEventListener("DOMContentLoaded", function() {
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+});
+
+fetch('../chamber/data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        renderMembers(data); // Initial rendering
+        gridButton.addEventListener("click", () => renderMembers(data, "grid"));
+        listButton.addEventListener("click", () => renderMembers(data, "list"));
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
+
+// Function to render members based on the selected view
+function renderMembers(data, view = "grid") {
+    const members = data.chamber_of_commerce_members;
+    display.innerHTML = ""; // Clear previous content
+    
+    members.forEach(member => {
+        const section = document.createElement("section");
+        section.innerHTML = `
+        <img src="${member.image}" alt="${member.name}">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p>${member.additional_info}</p>
+    `;
+
+    if (view === "grid") {
+        section.classList.add("grid-section");
+    }
+
+    display.appendChild(section);
+    });
+}
+});
+
 window.onload = function () {
     const timeStamp = document.querySelector('#timeStamp');
     const currentTimeStamp = new Date().toISOString();

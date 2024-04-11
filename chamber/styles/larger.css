@@ -56,6 +56,91 @@ main {
     gap: 20px;
     margin: 10px;
 }
+.menu-directory {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
+}
+.menu-directory button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+section img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+section > * {
+    margin: 0.1rem;
+}
+
+section h3 {
+    font-family: "Caveat", cursive;
+}
+
+section:nth-child(even) {
+    background-color: #bed;
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+.grid article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+.list section {
+    width: 100%;
+}
+.directory {
+    display: flex;
+    flex-direction: column;
+}
+.list img {
+    display: none;
+}
+img {
+    height: 75px;
+    max-width: 100%;
+}
 main.form-inputs {
     display: flex;
 }

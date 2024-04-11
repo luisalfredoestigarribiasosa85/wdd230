@@ -1,0 +1,68 @@
+{
+    "city": "Itaugua",
+    "chamber_of_commerce_members": [
+        {
+            "name": "Smith Enterprises",
+            "address": "123 Main Street, Metropolis",
+            "phone": "+1 (555) 123-4567",
+            "website": "http://www.smithenterprises.com",
+            "image": "https://images.pexels.com/photos/233698/pexels-photo-233698.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Gold",
+            "additional_info": "Smith Enterprises specializes in IT solutions and consulting services."
+        },
+        {
+            "name": "Johnson & Co. Law Firm",
+            "address": "456 Oak Avenue, Metropolis",
+            "phone": "+1 (555) 987-6543",
+            "website": "http://www.johnsonlawfirm.com",
+            "image": "https://images.pexels.com/photos/613508/pexels-photo-613508.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Platinum",
+            "additional_info": "Johnson & Co. Law Firm provides comprehensive legal services for businesses and individuals."
+        },
+        {
+            "name": "Brown's Hardware Store",
+            "address": "789 Elm Street, Metropolis",
+            "phone": "+1 (555) 321-8765",
+            "website": "http://www.brownshardware.com",
+            "image": "https://images.pexels.com/photos/6044837/pexels-photo-6044837.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Silver",
+            "additional_info": "Brown's Hardware Store offers a wide range of hardware and home improvement products."
+        },
+        {
+            "name": "Martinez Accounting Services",
+            "address": "101 Pine Boulevard, Metropolis",
+            "phone": "+1 (555) 876-5432",
+            "website": "http://www.martinezaccounting.com",
+            "image": "https://images.pexels.com/photos/4968646/pexels-photo-4968646.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Gold",
+            "additional_info": "Martinez Accounting Services provides accounting and financial consulting services for businesses."
+        },
+        {
+            "name": "Wilson Construction",
+            "address": "222 Cedar Lane, Metropolis",
+            "phone": "+1 (555) 234-5678",
+            "website": "http://www.wilsonconstruction.com",
+            "image": "https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Platinum",
+            "additional_info": "Wilson Construction specializes in residential and commercial construction projects."
+        },
+        {
+            "name": "Lee's Bakery",
+            "address": "333 Maple Street, Metropolis",
+            "phone": "+1 (555) 678-9012",
+            "website": "http://www.leesbakery.com",
+            "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Bronze",
+            "additional_info": "Lee's Bakery offers a variety of freshly baked goods and custom cakes for all occasions."
+        },
+        {
+            "name": "Thompson Marketing Agency",
+            "address": "444 Walnut Avenue, Metropolis",
+            "phone": "+1 (555) 890-1234",
+            "website": "http://www.thompsonmarketing.com",
+            "image": "https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "membership_level": "Silver",
+            "additional_info": "Thompson Marketing Agency specializes in digital marketing strategies and brand development."
+        }
+    ]
+}
