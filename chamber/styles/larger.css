@@ -219,6 +219,26 @@ h3 {
 #membership-benefits #gold {
     margin-top: 28%;
 }
+
+#weather-widget p {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    line-height: 2;
+}
+#weather-icon {
+    width: 44px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: invert(1) sepia(1);
+}
+.discover-images img {
+    max-width: 100%;
+    height: auto;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;

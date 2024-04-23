@@ -87,4 +87,8 @@
     .thankyou-container {
         max-width: 300px;
     }
+    div#membership-benefits {
+        display: flex;
+        flex-direction: column;
+    }
 }

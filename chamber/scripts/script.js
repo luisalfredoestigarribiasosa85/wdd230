@@ -108,18 +108,34 @@ fetch(apiUrl)
         const currentWeather = data.list[0].weather[0].main;
         const currentTemperature = data.list[0].main.temp;
         const forecast = data.list.slice(1, 9); // Get next 24 hours forecast
+        console.log(data);
 
         // Display current weather and forecast
         const weatherWidget = document.getElementById('weather-widget');
         weatherWidget.innerHTML = `
             <h2>Weather in Itaugua</h2>
-            <p>Current Temperature: ${currentTemperature}°C</p>
-            <p>Current Weather: ${currentWeather}</p>
-            <h3>Three Day Forecast:</h3>
+            <p>${currentTemperature}°C</p>
+            <img src="" alt="" id="weather-icon"> <!-- Icon placeholder -->
+            <p>${currentWeather}</p>
+            <h2>Three Day Forecast:</h2>
             <ul>
                 ${forecast.map(entry => `<li>${entry.dt_txt}: ${entry.main.temp}°C</li>`).join('')}
             </ul>
         `;
+
+        // Set weather icon based on currentWeather
+        const weatherIcon = document.getElementById('weather-icon');
+        if (currentWeather === "Rain") {
+            weatherIcon.src = "images/rsz_agua.png";
+            weatherIcon.alt = "Rainy Icon";
+        } else if (currentWeather === "Clouds") {
+            weatherIcon.src = "images/rsz_nubes.png";
+            weatherIcon.alt = "Cloudy Icon";
+        } else {
+            weatherIcon.src = "images/rsz_dom.png";
+            weatherIcon.alt = "Sunny Icon";
+        }
+
     })
     .catch(error => {
         console.error('Error fetching weather data:', error);
