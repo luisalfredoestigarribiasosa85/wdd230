@@ -117,22 +117,22 @@ fetch(apiUrl)
             <p>${currentTemperature}°C</p>
             <img src="" alt="" id="weather-icon"> <!-- Icon placeholder -->
             <p>${currentWeather}</p>
-            <h2>Three Day Forecast:</h2>
-            <ul>
-                ${forecast.map(entry => `<li>${entry.dt_txt}: ${entry.main.temp}°C</li>`).join('')}
+            <h2>Hourly Forecast:</h2>
+            <ul class='hourly-forecast'>
+                ${forecast.map(entry => `<li>${entry.dt_txt}: ${entry.weather[0].main} ${entry.main.temp}°C</li>`).join('')}
             </ul>
         `;
 
         // Set weather icon based on currentWeather
         const weatherIcon = document.getElementById('weather-icon');
         if (currentWeather === "Rain") {
-            weatherIcon.src = "images/rsz_agua.png";
+            weatherIcon.src = "images/agua.png";
             weatherIcon.alt = "Rainy Icon";
         } else if (currentWeather === "Clouds") {
-            weatherIcon.src = "images/rsz_nubes.png";
+            weatherIcon.src = "images/nubes.png";
             weatherIcon.alt = "Cloudy Icon";
         } else {
-            weatherIcon.src = "images/rsz_dom.png";
+            weatherIcon.src = "images/dom.png";
             weatherIcon.alt = "Sunny Icon";
         }
 

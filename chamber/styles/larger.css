@@ -56,6 +56,13 @@ main {
     gap: 20px;
     margin: 10px;
 }
+main.sections {
+    padding: 50px;
+}
+main.sections section p {
+    font-size: 13pt;
+    line-height: 1.2;
+}
 .menu-directory {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -233,7 +240,27 @@ h3 {
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: invert(1) sepia(1);
+}
+ul.hourly-forecast {
+    display: flex;
+    justify-content: space-around;
+}
+ul.hourly-forecast li {
+    list-style: none;
+    clear: both;
+    width: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+div.spotlight-ad {
+    text-align: center;
+    padding: 30px;
+}
+div.spotlight-ad img {
+    margin: 20px;
 }
 .discover-images img {
     max-width: 100%;
@@ -375,7 +402,7 @@ div.events {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 50px 0;
 }
 p.degrees {
     font-size: 4.5rem;
